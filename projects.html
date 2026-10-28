@@ -9,7 +9,10 @@
     body { font: 18px/1.6 system-ui, sans-serif; max-width: 36rem; margin: 10vh auto; padding: 0 1.25rem; }
     a { color: inherit; }
     .project { margin: 1.5rem 0; }
-    .project img { width: 100%; height: auto; border-radius: 8px; border: 1px solid #8884; }
+    .shots { display: flex; gap: 0.75rem; align-items: flex-start; }
+    .shots a:first-child { flex: 3; }
+    .shots a:last-child { flex: 1; }
+    .shots img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid #8884; }
     .project h3 { margin: 0.75rem 0 0.25rem; }
     .project p { margin: 0.25rem 0; }
   </style>
@@ -19,17 +22,19 @@
   <h1>Projects</h1>
 
   <section class="project">
-    <a href="https://festivalscienza.ge.it/">
-      <img src="img/festival.png" alt="Screenshot of the Festival della Scienza event list" loading="lazy">
-    </a>
+    <div class="shots">
+      <a href="https://festivalscienza.ge.it/"><img src="img/festival.png" alt="Desktop screenshot of Festival della Scienza" loading="lazy"></a>
+      <a href="https://festivalscienza.ge.it/"><img src="img/festival-mobile.jpg" alt="Mobile screenshot of Festival della Scienza" loading="lazy"></a>
+    </div>
     <h3><a href="https://festivalscienza.ge.it/">Festival della Scienza</a></h3>
     <p>An unofficial app for the Festival della Scienza in Genoa (26 Oct – 1 Nov). Browse events by day as a list or on a map, filter them, see what is on right now, and save your favourites. Works on mobile and has a dark mode.</p>
   </section>
 
   <section class="project">
-    <a href="https://sber.to.it/blabla">
-      <img src="img/blabla.jpg" alt="Screenshot of the BlaBla community website" loading="lazy">
-    </a>
+    <div class="shots">
+      <a href="https://sber.to.it/blabla"><img src="img/blabla.jpg" alt="Desktop screenshot of the BlaBla community website" loading="lazy"></a>
+      <a href="https://sber.to.it/blabla"><img src="img/blabla-mobile.jpg" alt="Mobile screenshot of the BlaBla community website" loading="lazy"></a>
+    </div>
     <h3><a href="https://sber.to.it/blabla">BlaBla community</a></h3>
     <p>A website for BlaBla, a free, volunteer-run language exchange: meet new people, make friends and practise languages at events in 70+ cities.</p>
   </section>
