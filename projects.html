@@ -6,52 +6,66 @@
   <title>Projects · Stefano Bertolotto</title>
   <style>
     :root { color-scheme: light dark; }
-    body { font: 18px/1.6 system-ui, sans-serif; max-width: 36rem; margin: 10vh auto; padding: 0 1.25rem; }
+    body { font: 18px/1.6 system-ui, sans-serif; max-width: 52rem; margin: 8vh auto; padding: 0 1.25rem; }
     a { color: inherit; }
-    .project { margin: 1.5rem 0; }
-    .shots { display: flex; gap: 0.75rem; align-items: flex-start; }
-    .shots a:first-child { flex: 3; }
-    .shots a:last-child { flex: 1; }
-    .shots img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid #8884; }
-    .project h3 { margin: 0.75rem 0 0.25rem; }
-    .project p { margin: 0.25rem 0; }
-    figure { margin: 1rem 0 0; }
+    section { margin: 3rem 0; }
+    h2 { margin: 0 0 0.25rem; }
+    p { margin: 0.4rem 0; }
+    ul { margin: 0.4rem 0; padding-left: 1.25rem; }
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+    @media (max-width: 40rem) { .compare { grid-template-columns: 1fr; } }
+    figure { margin: 0; }
     figure img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid #8884; }
-    figcaption { font-size: 0.85rem; opacity: 0.75; margin-top: 0.35rem; }
+    figure img + img { width: 40%; margin-top: 0.5rem; }
+    figcaption { font-size: 0.85rem; margin-top: 0.35rem; opacity: 0.8; }
+    .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 0.1rem 0.5rem; border-radius: 999px; margin-bottom: 0.4rem; background: #8883; }
+    .tag.after { background: #2a7a4b; color: #fff; }
   </style>
 </head>
 <body>
   <p><a href="/">← Home</a></p>
   <h1>Projects</h1>
 
-  <section class="project">
-    <div class="shots">
-      <a href="https://festivalscienza.ge.it/"><img src="img/festival.png" alt="Desktop screenshot of my Festival della Scienza app" loading="lazy"></a>
-      <a href="https://festivalscienza.ge.it/"><img src="img/festival-mobile.jpg" alt="Mobile screenshot of my Festival della Scienza app" loading="lazy"></a>
+  <section>
+    <h2>Festival della Scienza, quick view</h2>
+    <p>An unofficial app for the <a href="https://www.festivalscienza.it/">Festival della Scienza</a> in Genoa. The official programme was hard to scan quickly: it was difficult to see what was happening now, and to keep track of the events I liked. This version lists what is on now and soon, and lets you filter events and save favourites.</p>
+    <p>It spread by word of mouth and is used by about 140 people. <a href="https://festivalscienza.ge.it/">Open the app</a>.</p>
+    <div class="compare">
+      <figure>
+        <span class="tag">Before</span>
+        <a href="https://www.festivalscienza.it/programma-2026"><img src="img/festival-original.jpg" alt="Official Festival della Scienza programme page" loading="lazy"></a>
+        <figcaption>The official website, <strong>not mine</strong>.</figcaption>
+      </figure>
+      <figure>
+        <span class="tag after">After</span>
+        <a href="https://festivalscienza.ge.it/"><img src="img/festival.png" alt="Desktop view of the quick-view app" loading="lazy"><img src="img/festival-mobile.jpg" alt="Mobile view of the quick-view app" loading="lazy"></a>
+        <figcaption>The quick-view app.</figcaption>
+      </figure>
     </div>
-    <h3><a href="https://festivalscienza.ge.it/">Festival della Scienza, quick view</a></h3>
-    <p>An unofficial app for the Festival della Scienza in Genoa. I built it because the official programme was hard to use quickly: it was difficult to understand what was going on right now, and to keep track of the events I liked. My version shows what is on now and soon, lets you filter events and save your favourites, and works on mobile and desktop.</p>
-    <p>About 140 people use it, only through word of mouth.</p>
-    <figure>
-      <a href="https://www.festivalscienza.it/programma-2026"><img src="img/festival-original.jpg" alt="Screenshot of the official Festival della Scienza programme page" loading="lazy"></a>
-      <figcaption>This is the <strong>official</strong> festival website, <strong>not mine</strong>, shown for comparison: <a href="https://www.festivalscienza.it/">festivalscienza.it</a>. It is how the programme looks today.</figcaption>
-    </figure>
   </section>
 
-  <section class="project">
-    <div class="shots">
-      <a href="https://sber.to.it/blabla"><img src="img/blabla.jpg" alt="Desktop screenshot of my BlaBla community website" loading="lazy"></a>
-      <a href="https://sber.to.it/blabla"><img src="img/blabla-mobile.jpg" alt="Mobile screenshot of my BlaBla community website" loading="lazy"></a>
-    </div>
-    <h3><a href="https://sber.to.it/blabla">BlaBla community, new website</a></h3>
-    <p>A redesign of the website for BlaBla, a free, volunteer-run language exchange with events in 70+ cities. The <a href="https://www.blablacommunity.com/">original site</a> was generic, with no link to real events that were happening, so it was hard to tell whether the project was alive or dead.</p>
-    <p>I made the new one to fix that:</p>
+  <section>
+    <h2>BlaBla community, new website</h2>
+    <p>A new website for <a href="https://www.blablacommunity.com/">BlaBla</a>, a free, volunteer-run language exchange with events in 70+ cities. The previous site was generic and did not link to real events, so it was hard to tell whether the project was still active.</p>
+    <p>The new version:</p>
     <ul>
-      <li>faster to load</li>
-      <li>more catchy</li>
-      <li>upcoming events right on the homepage</li>
-      <li>contacts easy to find</li>
+      <li>loads faster</li>
+      <li>shows upcoming events on the homepage</li>
+      <li>has contacts that are easy to find</li>
     </ul>
+    <p><a href="https://sber.to.it/blabla">Open the new site</a>.</p>
+    <div class="compare">
+      <figure>
+        <span class="tag">Before</span>
+        <a href="https://www.blablacommunity.com/"><img src="img/blabla-original.jpg" alt="Previous BlaBla website" loading="lazy"></a>
+        <figcaption>The previous website, <strong>not mine</strong>.</figcaption>
+      </figure>
+      <figure>
+        <span class="tag after">After</span>
+        <a href="https://sber.to.it/blabla"><img src="img/blabla.jpg" alt="Desktop view of the new BlaBla website" loading="lazy"><img src="img/blabla-mobile.jpg" alt="Mobile view of the new BlaBla website" loading="lazy"></a>
+        <figcaption>The new website.</figcaption>
+      </figure>
+    </div>
   </section>
 </body>
 </html>
